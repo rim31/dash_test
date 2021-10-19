@@ -1,0 +1,87 @@
+.Sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25vw;
+  background-color: #101010;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SidebarContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.SidebarProfileDetails {
+  margin-top: 1rem;
+}
+
+.SidebarProfileImageDiv {
+  position: relative;
+  height: 128px;
+  width: auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.SidebarNotification {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0px;
+  right: 12px; // location of the red notification
+}
+
+.SidebarUserName {
+  margin-top: 1rem;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.SidebarEmail {
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+.SidebarNav {
+  margin-top: -8rem;
+  margin-bottom: 3rem;
+}
+
+.SidebarNavItems {
+  list-style-type: none;
+}
+
+.SidebarNavItem {
+  margin: 2rem 0;
+}
+
+.SidebarNavLink {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 32px;
+
+  &Active {
+    @extend .SidebarNavLink;
+    opacity: 1;
+    // font-size: 40px;
+  }
+}
