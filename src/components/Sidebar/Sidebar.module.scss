@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 25vw;
+  min-width: 25vw;
+  max-width: 25vw;
   background-color: #101010;
   color: white;
 
@@ -28,7 +29,7 @@
   position: relative;
   height: 128px;
   width: auto;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   border-radius: 5px;
 }
 
@@ -45,7 +46,6 @@
   position: absolute;
   top: -4px;
   left: -4px;
-  // right: 12px; // location of the red notification
 }
 
 .SidebarUserName {
@@ -79,11 +79,11 @@
   color: white;
   opacity: 0.5;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
 
   &Active {
     @extend .SidebarNavLink;
     opacity: 1;
-    // font-size: 40px;
+    text-decoration: underline;
   }
 }
